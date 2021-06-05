@@ -3,8 +3,7 @@ import { action, makeObservable, observable, autorun } from 'mobx';
 
 /**
  * mobx store
- * currentUser - create a new user on mobx
- * Boolean variable - Update the component we are currently in edit mode
+ * currentUser - create a new user on mobx (Name and Age)
  * editMode - Boolean variable - Update the Displayusername component we are currently in edit mode
  */
 
