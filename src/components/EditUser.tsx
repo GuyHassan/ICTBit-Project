@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { CurrentUserStore } from '../stores/CurrentUser.store';
 import { generateNewUser } from '../Utils';
 import { observer } from 'mobx-react';
-
+import './Main_Style.css';
 
 // mobx interface
 interface CurrentPropsStore {
@@ -50,6 +50,7 @@ export const EditUser: React.FC<CurrentPropsStore> = observer(({ userStore }) =>
                 <p>I'm live in {userNotExists.city} which is in {userNotExists.country}</p>
                 <button onClick={generateNewUser.bind(null, userStore, setUserNotExists)}>Generate New User</button>
                 <button onClick={clearAll}>Clear All Information</button>
+                <button onClick={() => { userStore.onEditMode() }}>Edit Your Properties</button>
             </div>
         </div>
     )

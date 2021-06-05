@@ -4,17 +4,21 @@ import { action, makeObservable, observable, autorun } from 'mobx';
 /**
  * mobx store
  * currentUser - create a new user on mobx
- * 
+ * Boolean variable - Update the component we are currently in edit mode
+ * editMode - Boolean variable - Update the Displayusername component we are currently in edit mode
  */
 
 export class CurrentUserStore {
   currentUser: UserModel = new UserModel(NaN, '');
+  editMode: boolean = false;
 
   constructor() {
     makeObservable(this, {
       currentUser: observable,
+      editMode: observable,
       addUser: action,
       clearUser: action,
+      onEditMode: action
     })
   }
   addUser(age: number, name: string) {
@@ -22,6 +26,9 @@ export class CurrentUserStore {
   }
   clearUser() {
     this.currentUser = new UserModel(NaN, '')
+  }
+  onEditMode() {
+    this.editMode = !this.editMode;
   }
 }
 

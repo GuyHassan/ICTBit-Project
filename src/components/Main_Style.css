@@ -1,0 +1,56 @@
+button {
+    margin: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: 0.4s;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid rgb(185, 134, 87);
+
+}
+
+body {
+    overflow: hidden;
+}
+
+button:hover {
+    background-color: rgb(185, 118, 87);
+    cursor: pointer;
+    color: white;
+}
+
+input[type=text],
+input[type=number] {
+    margin: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+input[type=text],
+input[type=number] {
+    width: 10vw;
+    border: none;
+    background-color: rgb(40, 44, 52);
+    color: white;
+    font-size: 20px;
+    border-bottom: 2px solid rgb(185, 87, 87);
+}
+
+.name-title {
+    text-transform: capitalize;
+}
+
+.display-username,
+.edit-user {
+    border: 1px solid rgb(245, 131, 131);
+    margin: 5px;
+    width: 100vw;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    width: 50%;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.1), rgba(0, 0, 0, 0.75), rgba(255, 0, 0, 0.1));
+}
