@@ -4,6 +4,7 @@ import { action, makeObservable, observable, autorun } from 'mobx';
 /**
  * mobx store
  * currentUser - create a new user on mobx
+ * 
  */
 
 export class CurrentUserStore {
