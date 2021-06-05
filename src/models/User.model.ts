@@ -1,3 +1,9 @@
+// Arrange data in model
 export default class UserModel {
-  constructor() {}
+  Age: number;
+  Name: string;
+  constructor(age: number, name: string) {
+    this.Age = age;
+    this.Name = name;
+  }
 }
